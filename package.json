@@ -20,7 +20,7 @@
     "format": "npx prettier --write '**/*.ts' --config .prettierrc"
   },
   "dependencies": {
-    "array-move": "^3.0.1",
+    "array-move": "^4.0.0",
     "dayjs": "^1.11.10",
     "discord.js": "^14.14.1",
     "dotenv": "^16.4.5",
