@@ -1,0 +1,52 @@
+{
+  "name": "cronosbot",
+  "version": "0.0.2",
+  "description": "A discord bot to manage those pesky friendgroup timezone issues",
+  "main": "index.ts",
+  "author": "ElPocoBurrito",
+  "private": true,
+  "homepage": "",
+  "repository": "github:elpocoburrito:CronosBot",
+  "bugs": "",
+  "engines": {
+    "node": ">=16.11.0"
+  },
+  "scripts": {
+    "dev": "nodemon index.ts",
+    "start": "ts-node index.ts",
+    "build": "tsc --build",
+    "prod": "npm run build && node ./dist/index.js",
+    "commit": "cz",
+    "format": "npx prettier --write '**/*.ts' --config .prettierrc"
+  },
+  "dependencies": {
+    "array-move": "^3.0.1",
+    "dayjs": "^1.11.10",
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.4.5",
+    "i18n": "^0.15.1",
+    "string-progressbar": "^1.0.4"
+  },
+  "devDependencies": {
+    "@types/i18n": "^0.13.10",
+    "@types/node": "^20.11.27",
+    "cz-conventional-changelog": "^3.0.1",
+    "nodemon": "^2.0.22",
+    "prettier": "^3.2.5",
+    "ts-node": "^10.9.2"
+  },
+  "optionalDependencies": {
+    "@discordjs/opus": "^0.9.0",
+    "libsodium-wrappers": "^0.7.13",
+    "opusscript": "^0.1.1",
+    "sodium-native": "^3.4.1",
+    "tweetnacl": "^1.0.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog",
+      "disableScopeLowerCase": false,
+      "disableSubjectLowerCase": false
+    }
+  }
+}
